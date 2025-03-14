@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import os
 import sys
-#import re
 
 def shell_prompt():
     return os.environ.get('PS1', '$ ')  # shell prompt PS1 or $ 
