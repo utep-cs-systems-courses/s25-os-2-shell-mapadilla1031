@@ -166,6 +166,11 @@ def main():
             sys.exit(1)
             
         elif pid == 0:  # In the Child process
+            #(Side notes)
+            # 0 Standard/default input <stdin> - keyboard
+            # 1 Standard/default output <stdout> - screen
+            # 2 Standard/default error <stderr>- screen
+            
             # input redirection if needed
             if input_file:
                 os.close(0)  # Close stdin
